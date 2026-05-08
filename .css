@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    color: white;
+    min-height: 100vh;
+}
+
+/* ========================= */
+/* FONDO */
+/* ========================= */
+
+.fondoHTML{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
+
+    filter: brightness(0.35);
+}
+
+/* ========================= */
+/* INDEX */
+/* ========================= */
+
+.inicio{
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.inicio h1{
+
+    font-size: 90px;
+
+    color: #b266ff;
+
+    text-shadow:
+    0 0 20px #b266ff;
+}
+
+.inicio p{
+
+    margin-top: 15px;
+
+    font-size: 22px;
+
+    color: #ddd;
+}
+
+/* MENU */
+
+.menu{
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.menu button{
+
+    width: 220px;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #6a00ff,
+        #b100ff
+    );
+
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.menu button:hover{
+
+    transform: scale(1.05);
+
+    box-shadow:
+    0 0 20px #b266ff;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header{
+
+    padding: 30px;
+
+    text-align: center;
+
+    background:
+    rgba(0,0,0,0.5);
+
+    backdrop-filter: blur(10px);
+}
+
+header h1{
+
+    font-size: 50px;
+}
+
+/* BUSCADOR */
+
+#buscador{
+
+    margin-top: 20px;
+
+    width: 300px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    outline: none;
+}
+
+/* ========================= */
+/* CONTENEDOR */
+/* ========================= */
+
+.contenedor{
+
+    width: 90%;
+
+    margin: auto;
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+/* ========================= */
+/* STANDS */
+/* ========================= */
+
+.stand{
+
+    background:
+    rgba(0,0,0,0.7);
+
+    border:
+    2px solid #7d2cff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+}
+
+/* TITULO DESPLEGABLE */
+
+summary{
+
+    padding: 20px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    transition: 0.3s;
+}
+
+summary:hover{
+
+    background:
+    rgba(255,255,255,0.1);
+}
+
+/* CONTENIDO */
+
+.contenidoStand{
+
+    padding: 25px;
+}
+
+/* USUARIO */
+
+.usuario{
+
+    margin-top: 10px;
+
+    color: #d0b3ff;
+}
+
+/* ========================= */
+/* INFO */
+/* ========================= */
+
+.info{
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+}
+
+/* ========================= */
+/* IMAGEN STAND */
+/* ========================= */
+
+.imagenStand{
+
+    width: 320px;
+    height: 420px;
+
+    background: #111;
+
+    border:
+    2px solid #a855ff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenStand img{
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+/* ========================= */
+/* STATS */
+/* ========================= */
+
+.stats{
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.statsImg{
+
+    width: 240px;
+
+    border-radius: 15px;
+}
+
+/* TABLA */
+
+table{
+
+    border-collapse: collapse;
+
+    width: 250px;
+}
+
+th,
+td{
+
+    border:
+    1px solid white;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+/* ========================= */
+/* TEXTO */
+/* ========================= */
+
+.descripcion,
+.referencia{
+
+    margin-top: 25px;
+
+    line-height: 1.7;
+}
+
+/* ========================= */
+/* FAVORITOS */
+/* ========================= */
+
+.favoritoBtn{
+
+    margin-top: 30px;
+
+    padding: 14px 22px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: gold;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.favoritoBtn:hover{
+
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:900px){
+
+    .inicio h1{
+
+        font-size: 60px;
+    }
+
+    .info{
+
+        flex-direction: column;
+    }
+
+    .imagenStand{
+
+        width: 100%;
+        height: 400px;
+    }
+
+}
