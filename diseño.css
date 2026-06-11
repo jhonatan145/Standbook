@@ -331,35 +331,6 @@ td{
     line-height: 1.7;
 }
 
-/* ========================= */
-/* FAVORITOS */
-/* ========================= */
-
-.favoritoBtn{
-
-    margin-top: 30px;
-
-    padding: 14px 22px;
-
-    border: none;
-
-    border-radius: 15px;
-
-    background: gold;
-
-    color: black;
-
-    font-weight: bold;
-
-    cursor: pointer;
-
-    transition: 0.3s;
-}
-
-.favoritoBtn:hover{
-
-    transform: scale(1.05);
-}
 
 /* ========================= */
 /* RESPONSIVE */
